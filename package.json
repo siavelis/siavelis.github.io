@@ -1,0 +1,35 @@
+{
+  "name": "siavelis.github.io",
+  "version": "1.0.0",
+  "description": "Website for Panagiotis Riccardo Siavelis",
+  "main": "src\\_app.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siavelis/siavelis.github.io.git"
+  },
+  "keywords": [
+    "private"
+  ],
+  "author": "Panagiotis Riccardo Siavelis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/siavelis/siavelis.github.io/issues"
+  },
+  "homepage": "https://github.com/siavelis/siavelis.github.io#readme",
+  "dependencies": {
+    "next": "^9.4.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.5",
+    "@types/react": "^16.9.35",
+    "typescript": "^3.9.3"
+  }
+}
