@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "export": "npm run build && next build -o docs",
+    "export": "npm run build && next export -o docs",
     "start": "next start",
     "test": "test"
   },
