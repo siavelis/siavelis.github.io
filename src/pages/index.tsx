@@ -20,13 +20,13 @@ function IndexPage() {
                             I also love to build high quality modular solutions to enhance expandability and
                             maintainability.
                         </h5>
-                        <h5>
-                            Want to know how I may help your project? Check out my&nbsp;
-                            <Link href={"/resume"}
-                                  passHref={true}>
-                                <a className="text-dark">resume</a>
-                            </Link>.
-                        </h5>
+                        {/*<h5>*/}
+                        {/*    Want to know how I may help your project? Check out my&nbsp;*/}
+                        {/*    <Link href={"/resume"}*/}
+                        {/*          passHref={true}>*/}
+                        {/*        <a className="text-dark">resume</a>*/}
+                        {/*    </Link>.*/}
+                        {/*</h5>*/}
                     </Col>
                 </Row>
             </div>
