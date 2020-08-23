@@ -1,6 +1,6 @@
 import {Col, Container, Row} from "react-bootstrap";
 import React from "react";
-import Link from "next/link"
+// import Link from "next/link"
 import BodyHeader from "../components/BodyHeader"
 import Avatar from "../components/index/Avatar";
 
@@ -35,7 +35,7 @@ function IndexPage() {
             <Container>
                 <h3 className="font-weight-bold text-center mb-3">Skills Overview</h3>
                 <div className="section-intro mx-auto text-center mb-5 text-secondary">
-                    I have more than 4 years experience building rich web applications for clients all over the world.
+                    I have more than 5 years experience developing software solutions for clients all over the world.
                     I like effortful problems, whatever the programming language.
                     Below is a quick overview of my main technical skill sets and tools I use.
                 </div>
@@ -76,8 +76,8 @@ const skillsCard = (header: string, skills: string[]) =>
     <div className="bg-white shadow-sm py-4 px-5 mb-2">
         <h4 className="text-center">{header}</h4>
         <ul className="skills-list list-unstyled text-secondary">
-            {skills.map(skill =>
-                <li className="mb-2">
+            {skills.map((skill, key) =>
+                <li key={key} className="mb-2">
                     <i className="fa fa-check mr-2 text-primary"/> {skill}
                 </li>
             )}
