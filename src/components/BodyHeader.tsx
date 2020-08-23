@@ -22,7 +22,7 @@ class BodyHeader extends React.Component<HeadProps> {
                         {renderNavLinkWithFaIcon("fa-github-alt", "https://github.com/siavelis")}
                     </Nav>
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+                {/*<Navbar.Toggle aria-controls="responsive-navbar-nav"/>*/}
                 <Navbar.Collapse className="justify-content-end" id="responsive-navbar-nav" >
                     {/*<Nav>*/}
                     {/*    {renderLinkNavLink("About", pathname, "/")}*/}
