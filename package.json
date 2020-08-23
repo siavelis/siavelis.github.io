@@ -6,6 +6,10 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "export": "npm run build && next export -o production",
+    "copy-to-docs": "npm run export && node prepareDocsFolder.js",
+    "publish": "npm run copy-to-docs && cd docs && git add --all && git commit -m \"Publishing to gh-pages\"",
+    "publish-dangerous" : "npm run publish && git push origin gh-pages",
     "start": "next start",
     "test": "test"
   },
@@ -28,12 +32,14 @@
     "next": "^9.4.2",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "serve": "^11.3.2"
   },
   "devDependencies": {
     "@types/node": "^14.0.5",
     "@types/react": "^16.9.35",
     "@types/react-fontawesome": "^1.6.4",
+    "fs-extra": "^9.0.1",
     "typescript": "^3.9.3"
   }
 }
