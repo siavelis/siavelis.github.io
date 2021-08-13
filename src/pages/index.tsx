@@ -35,7 +35,7 @@ function IndexPage() {
             <Container>
                 <h3 className="font-weight-bold text-center mb-3">Skills Overview</h3>
                 <div className="section-intro mx-auto text-center mb-5 text-secondary">
-                    I have more than 5 years experience developing software solutions for clients all over the world.
+                    I have more than 6 years experience developing software solutions for clients all over the world.
                     I like effortful problems, whatever the programming language.
                     Below is a quick overview of my main technical skill sets and tools I use.
                 </div>
