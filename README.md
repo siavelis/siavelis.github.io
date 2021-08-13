@@ -26,7 +26,7 @@ git worktree add -B gh-pages docs origin/gh-pages
 
 ### Production build
 ```
-npm run 
+npm run publish
 cd docs
 git add --all 
 git commit -m "Publishing to gh-pages"
