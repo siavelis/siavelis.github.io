@@ -9,7 +9,7 @@
     "export": "npm run build && next export -o production",
     "copy-to-docs": "npm run export && node prepareDocsFolder.js",
     "publish": "npm run copy-to-docs && cd docs && git add --all && git commit -m \"Publishing to gh-pages\"",
-    "publish-dangerous" : "npm run publish && git push origin gh-pages",
+    "publish-dangerous": "npm run publish && git push origin gh-pages",
     "start": "next start",
     "test": "test"
   },
