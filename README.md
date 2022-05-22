@@ -68,7 +68,7 @@ serve -d production
 TODO: make deployment with gitlab ci/cid
 
 ```
-git branch
+git checkout master
 npm run publish
 cd docs
 git add --all 
