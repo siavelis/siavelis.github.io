@@ -4,11 +4,10 @@ A personal website built with Next.js framework.
 
 ## Requirements
 
-- nodejs@17.3.0
+- Nodejs@17.3.0
 - npm@8.3.0
-- Next.js
-- Typescript 
-- Next.js 
+- Next.js@12.0.10
+- Typescript
 
 ### Update dependencies
 
@@ -34,13 +33,39 @@ that actually uses the approach from
 In short, [git worktree](https://git-scm.com/docs/git-worktree) is used, that allows multiple branches of the same local
 repository under different directories.
 
-### Setup
+### Setup for option 2
 
 ```
 git worktree add -B gh-pages docs origin/gh-pages
 ```
 
-### Production build
+### Other options
+
+- [Vercel](https://nextjs.org/docs/deployment#vercel-recommended) (recommended by Next.js)
+
+## Flow
+
+### Development
+
+- Checkout from branch `master`
+- Test on development server
+
+```bash
+npm run dev
+```
+
+- Push changes on new branch
+- Before Pull Request you need to check the build output
+
+```bash
+npm run publish
+serve -d production
+# load http://localhost:8080 in web browser
+```
+
+### Deployment (manual)
+
+TODO: make deployment with gitlab ci/cid
 
 ```
 npm run publish
@@ -49,7 +74,3 @@ git add --all
 git commit -m "Publishing to gh-pages"
 git push origin gh-pages
 ```
-
-### Other options
-
-- [Vercel](https://nextjs.org/docs/deployment#vercel-recommended) (recommended by Next.js)
