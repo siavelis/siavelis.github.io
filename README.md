@@ -63,7 +63,9 @@ serve -d production
 # load http://localhost:8080 in web browser
 ```
 
-### Deployment
+### Deployment (manual)
+
+TODO: make deployment with gitlab ci/cid
 
 ```
 npm run publish
