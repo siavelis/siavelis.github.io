@@ -1,6 +1,5 @@
 import {Col, Container, Row} from "react-bootstrap";
 import React from "react";
-// import Link from "next/link"
 import BodyHeader from "../components/BodyHeader"
 import Avatar from "../components/index/Avatar";
 
