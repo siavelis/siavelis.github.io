@@ -7,7 +7,7 @@ fs.writeFile("production/.nojekyll", "", 'utf8', (err) => {
     }
 });
 
-const removePath = (path) => fs.rm(path, {recursive: true}, (err) => {
+const removePath = (path) => fs.rmSync(path, {recursive: true}, (err) => {
     if (!err) {
         console.log(`${path} is deleted!`);
     }
@@ -15,7 +15,11 @@ const removePath = (path) => fs.rm(path, {recursive: true}, (err) => {
 });
 
 // remove old "docs" folder
-removePath("docs/_next");
+try {
+    removePath("docs/_next");
+} catch (er) {
+
+}
 
 // copy "production" -> "docs"
 try {
