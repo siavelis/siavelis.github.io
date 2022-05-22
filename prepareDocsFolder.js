@@ -1,6 +1,6 @@
 const fs = require("fs-extra");
 
-const removeFolder = (dir) => fs.rmdirSync(dir, {recursive: true}, (err) => {
+const removeFolder = (dir) => fs.rm(dir, {recursive: true}, (err) => {
     if (err) {
         throw err;
     }
@@ -17,15 +17,12 @@ const removeFolder = (dir) => fs.rmdirSync(dir, {recursive: true}, (err) => {
 // });
 
 // copy worktree related information to production folder
-fs.copyFileSync("docs/.git", "production/.git", (err) => {
-    if (err) {
-        throw err;
-    }
-});
+fs.copySync("docs/.git", "production/.git",);
 
 // add .nojekyll
-fs.writeFile("production/.nojekyll", null, 'utf8', (err) => {
+fs.writeFile("production/.nojekyll", "", 'utf8', (err) => {
     if (err) {
+        console.log(err);
         throw err;
     }
 });
@@ -38,6 +35,6 @@ try {
     fs.copySync("production/", "docs/")
     console.log('success!')
 } catch (err) {
-    debugger
+    console.error(err);
     throw err;
 }
