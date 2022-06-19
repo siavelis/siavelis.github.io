@@ -2,10 +2,6 @@ import React from "react";
 import {Nav, Navbar} from "react-bootstrap";
 
 class NavigationBar extends React.PureComponent {
-    constructor(props) {
-        super(props);
-        this.state = {expanded: false};
-    }
 
     render() {
         return <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">

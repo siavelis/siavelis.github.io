@@ -2,6 +2,7 @@ import {Col, Container, Row} from "react-bootstrap";
 import React from "react";
 import NavigationBar from "../components/NavigationBar"
 import Avatar from "../components/Avatar";
+import Page from "../components/Page";
 
 // todo: add theme changer ...
 
@@ -12,8 +13,7 @@ import Avatar from "../components/Avatar";
 
 
 function IndexPage() {
-    return <div className="bg-light">
-        <NavigationBar />
+    return <Page>
         <div className="bg-info text-white">
             <div className='p-5'>
                 <Row>
@@ -69,7 +69,7 @@ function IndexPage() {
                 </Row>
             </Container>
         </div>
-    </div>
+    </Page>
 }
 
 const skillsCard = (header: string, skills: string[]) =>
