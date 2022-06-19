@@ -1,7 +1,15 @@
 import {Col, Container, Row} from "react-bootstrap";
 import React from "react";
 import BodyHeader from "../components/BodyHeader"
-import Avatar from "../components/index/Avatar";
+import Avatar from "../components/Avatar";
+
+// todo: add theme changer ...
+
+
+// layout component
+// method for generating navbar
+// method for generating footer
+
 
 function IndexPage() {
     return <div className="bg-light">
@@ -19,13 +27,6 @@ function IndexPage() {
                             I also love to build high quality modular solutions to enhance expandability and
                             maintainability.
                         </h5>
-                        {/*<h5>*/}
-                        {/*    Want to know how I may help your project? Check out my&nbsp;*/}
-                        {/*    <Link href={"/resume"}*/}
-                        {/*          passHref={true}>*/}
-                        {/*        <a className="text-dark">resume</a>*/}
-                        {/*    </Link>.*/}
-                        {/*</h5>*/}
                     </Col>
                 </Row>
             </div>
