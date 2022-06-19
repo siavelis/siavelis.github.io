@@ -1,6 +1,6 @@
 import {Col, Container, Row} from "react-bootstrap";
 import React from "react";
-import BodyHeader from "../components/BodyHeader"
+import NavigationBar from "../components/NavigationBar"
 import Avatar from "../components/Avatar";
 
 // todo: add theme changer ...
@@ -13,7 +13,7 @@ import Avatar from "../components/Avatar";
 
 function IndexPage() {
     return <div className="bg-light">
-        <BodyHeader pathname={"/"}/>
+        <NavigationBar />
         <div className="bg-info text-white">
             <div className='p-5'>
                 <Row>
