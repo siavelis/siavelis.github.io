@@ -2,7 +2,11 @@ import React from 'react';
 import Toggle from 'react-toggle';
 import 'react-toggle/style.css'
 
+const darkModeFeatureEnabled = false;
 export const DarkModeToggle = ({isDark, setIsDark}) => {
+    if (!darkModeFeatureEnabled) {
+        return null;
+    }
 
     return <Toggle
         checked={isDark}
