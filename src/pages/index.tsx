@@ -1,87 +1,151 @@
-import {Col, Container, Row} from "react-bootstrap";
-import React from "react";
-import BodyHeader from "../components/BodyHeader"
-import Avatar from "../components/index/Avatar";
+import {Badge, Col, Container, Row} from 'react-bootstrap';
+import React from 'react';
+import Avatar from '../components/Avatar';
+import jsonResumeData from '../data/json_stub.json';
+import {format} from 'date-fns';
 
-function IndexPage() {
-    return <div className="bg-light">
-        <BodyHeader pathname={"/"}/>
-        <div className="bg-info text-white">
-            <div className='p-5'>
-                <Row>
+const IndexPage = ({
+                       resume: {
+                           basics,
+                           education,
+                           languages,
+                           skills,
+                           work
+                       }
+                   }) => {
+
+    return <Container>
+        <Row>
+            <Col sm={6} md={5}>
+                <div style={{textAlign: 'center'}}>
                     <Avatar/>
-                    <Col xs={12} sm={6} md={8} lg={{span: 6}}>
-                        <h6>Hello, my name is</h6>
-                        <h5 className="mt-0 display-4 font-weight-bold">Panagiotis Riccardo Siavelis</h5>
-                        <h5>
-                            I am a full stack developer.
-                            I like undertaking challenging tasks that mostly require out of the box approaches.
-                            I also love to build high quality modular solutions to enhance expandability and
-                            maintainability.
-                        </h5>
-                        {/*<h5>*/}
-                        {/*    Want to know how I may help your project? Check out my&nbsp;*/}
-                        {/*    <Link href={"/resume"}*/}
-                        {/*          passHref={true}>*/}
-                        {/*        <a className="text-dark">resume</a>*/}
-                        {/*    </Link>.*/}
-                        {/*</h5>*/}
-                    </Col>
-                </Row>
-            </div>
-        </div>
-        <div className="pt-3">
-            <Container>
-                <h3 className="font-weight-bold text-center mb-3">Skills Overview</h3>
-                <div className="section-intro mx-auto text-center mb-5 text-secondary">
-                    I have more than 6 years experience developing software solutions for clients all over the world.
-                    I like effortful problems, whatever the programming language.
-                    Below is a quick overview of my main technical skill sets and tools I use.
+                </div>
+            </Col>
+            <Col>
+                <h2>{basics.name}</h2>
+                <h4>{basics.label}</h4>
+
+            </Col>
+        </Row>
+        <Row>
+            <Col sm={6} md={5}>
+
+                <h2>Summary</h2>
+                {basics.summary}
+
+                <h2>Contact</h2>
+                <div>
+                    <a href={'mailto:' + basics.email}>{basics.email}</a>
+                </div>
+                <div>
+                    <a href={'tel:' + basics.phone}>{basics.phone}</a>
+                </div>
+                <div>
+                    <a href={basics.url}>{basics.url}</a>
                 </div>
 
-                <Row>
-                    <Col md={{span: 6}} sm={6}>
-                        {skillsCard("Backend", [
-                            ".NET, .NET Core, NancyFx (MVC)",
-                            "Java, Kotlin, Spring Framework",
-                            "MongoDB, MySQL, InfluxDB, ElasticSearch",
-                            "MQTT, RabbitMQ, Kafka",
-                        ])}
-                    </Col>
-                    <Col md={{span: 6}} sm={6}>
-                        {skillsCard("Frontend", [
-                            "NodeJS",
-                            "WebSockets",
-                            "ReactJS",
-                            "Redux",
-                        ])}
-                    </Col>
+                <h2>Skills</h2>
+                {sortByStringProperty(skills, 'name')
+                    .map(({name}, i) => (
+                        <span key={'skill-' + i}>
+                        <Badge bg='primary'>{name}</Badge>
+                            {' '}
+                    </span>
+                    ))}
 
-                    <Col md={{span: 6, offset: 3}} sm={{span: 6, offset: 3}}>
-                        {skillsCard("Programming languages", [
-                            "C#",
-                            "Java",
-                            "Python",
-                            "TypeScript/JavaScript"
-                        ])}
-                    </Col>
-                </Row>
-            </Container>
-        </div>
-    </div>
+                <h2>Languages</h2>
+                {sortByStringProperty(languages, 'language')
+                    .map(({language, fluency}, i) => (
+                        <span key={'lang-' + i}>
+                        <Badge bg='primary'>{language}{': '}{fluency}</Badge>
+                            {' '}
+                    </span>
+                    ))}
+
+                <h2>Education</h2>
+                {education
+                    .map((ed, i) => (
+                        <div key={'education-' + i}>
+                            <Row>
+                                <Col>
+                                    <b>{ed.institution}</b>
+                                </Col>
+                                <Col style={{textAlign: 'right'}}>
+                                    <b>
+                                        {formatYear(ed.startDate)}
+                                        {' - '}
+                                        {formatYearOrNow(ed.endDate)}
+                                    </b>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <em>
+                                        {ed.area}
+                                    </em>
+                                </Col>
+                            </Row>
+                        </div>
+                    ))
+                }
+            </Col>
+            <Col>
+
+                <h2>Work experience</h2>
+                {work.map(({name, position, url, startDate, endDate, summary}, i) => (
+                    <div key={'work-' + i}>
+                        <Row>
+                            <Col sm={6} md={8}>
+                                <b>
+                                    {position} @ <a href={url}>{name}</a>
+                                </b>
+                            </Col>
+                            <Col style={{textAlign: 'right'}}>
+                                <b>
+                                    <b>
+                                        {formatYear(startDate)}
+                                        {' - '}
+                                        {formatYearOrNow(endDate)}
+                                    </b>
+                                </b>
+                            </Col>
+                        </Row>
+                        <Row style={{paddingBottom: '1rem'}}>
+                            <div dangerouslySetInnerHTML={{
+                                __html: summary
+                                    .replaceAll("\n", "<br/>")
+                            }}/>
+                        </Row>
+                    </div>
+                ))}
+
+
+            </Col>
+        </Row>
+
+    </Container>
 }
 
-const skillsCard = (header: string, skills: string[]) =>
-    <div className="bg-white shadow-sm py-4 px-5 mb-2">
-        <h4 className="text-center">{header}</h4>
-        <ul className="skills-list list-unstyled text-secondary">
-            {skills.map((skill, key) =>
-                <li key={key} className="mb-2">
-                    <i className="fa fa-check mr-2 text-primary"/> {skill}
-                </li>
-            )}
-        </ul>
-    </div>
 
+export function getStaticProps() {
+
+    return {
+        props: {
+            resume: jsonResumeData,
+        },
+    }
+
+}
+
+const sortByStringProperty = (array, property) => {
+    return array.sort((x, y) => x[property].localeCompare(y[property]))
+}
+
+const formatYear = (date) => {
+    return format(new Date(date), 'yyyy');
+}
+const formatYearOrNow = (date) => date == '' ?
+    'now'
+    : formatYear(date);
 
 export default IndexPage

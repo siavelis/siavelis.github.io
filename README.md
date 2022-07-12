@@ -4,8 +4,8 @@ A personal website built with Next.js framework.
 
 ## Requirements
 
-- Nodejs@17.3.0
-- npm@8.3.0
+- Nodejs@17.9.1
+- npm@8.11.0
 - Next.js@12.0.10
 - Typescript
 
