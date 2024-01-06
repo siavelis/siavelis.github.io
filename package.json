@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "export": "npm run build && next export -o production",
-    "copy-to-docs": "npm run export && node prepareDocsFolder.js",
+    "copy-to-docs": "npm run build && node prepareDocsFolder.js",
     "publish": "npm run copy-to-docs && cd production && git add --all && git commit -m \"Publishing to gh-pages\"",
     "publish-dangerous": "npm run publish && git push origin gh-pages",
     "start": "next start",

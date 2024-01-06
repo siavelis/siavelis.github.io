@@ -2,11 +2,11 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Panagiotis Riccardo Siavelis",
-    "label": "Software engineer at XM",
+    "label": "Senior Software Engineer @ XM | Java Spring Boot",
     "image": "",
     "email": "prsiavelis@gmail.com",
-    "phone": "+30 697 3956 012",
-    "url": "https://siavelis.github.io/",
+    "phone": "",
+    "url": "",
     "summary": "I like effortful problems, whatever the programming language. Eager to enjoy the travel of undertaking challenging tasks along with coworkers, of course.",
     "location": {
       "countryCode": "US",
@@ -23,11 +23,21 @@
   "work": [
     {
       "name": "XM",
-      "position": "Software Engineer",
-      "startDate": "2021-09-30",
+      "position": "Senior Software Engineer",
+      "startDate": "2023-01-31",
       "endDate": "",
       "highlights": [],
-      "summary": "",
+      "summary": "- Bug fixes and new features in legacy systems\n- Support & monitor legacy systems\n- Contribute in a new Java Spring Boot application that attributes bonuses to clients based on some configurable filters",
+      "url": "https://www.linkedin.com/company/xm-global/",
+      "location": "Athens, Attiki, Greece"
+    },
+    {
+      "name": "XM",
+      "position": "Software Engineer",
+      "startDate": "2021-09-30",
+      "endDate": "2022-12-31",
+      "highlights": [],
+      "summary": "- Bug fixes and new features in legacy systems\n- Support & monitor legacy systems\n- Contributed in a new Java Spring Boot application with Reactive Stream. The application serves requests from the XM Mobile App\n- Support, monitor and improvements to the aforementioned Java application",
       "url": "https://www.linkedin.com/company/xm-global/",
       "location": "Athens, Attiki, Greece"
     },
@@ -37,7 +47,7 @@
       "startDate": "2020-01-31",
       "endDate": "2021-08-31",
       "highlights": [],
-      "summary": "Contribute in the backend software development lifecycle of a product owned by OTE Group of Companies. Technology stack: Java microservices managed by Kubernetes\n- with Spring boot\n- Kafka for asynchronous events\n- APM & ELK for logs and search functionality\n- Hibernate + MySQL\n- MongoDB\n- Redis\n- Firebase Cloud Messaging\n- Openfire for XMPP\n\nTeam leader since July 2020",
+      "summary": "Contribute in the backend software development lifecycle of Payzy, a product owned by OTE Group of Companies. Technology stack: Java microservices managed by Kubernetes\n- with Spring boot\n- Kafka for asynchronous events\n- APM & ELK for logs and search functionality\n- Hibernate + MySQL\n- MongoDB\n- Redis\n- Firebase Cloud Messaging\n- Openfire for XMPP\n\nTeam leader on July 2020",
       "url": "https://www.linkedin.com/company/cognity/",
       "location": "Athens, Greece"
     },
@@ -60,6 +70,36 @@
       "summary": "Member of the R&D team.Took part of the development and the maintenance of the  products:\n- Cyan, an Application Development Enablement Platform\n- Emerald, a visualizations creator\n- Alcyone, Yodiwo's backend\n- Wisper, gateway's software\n- An upload service, that supports auto deletion  using either number of downloads quota or due dates\n- Facility Management, for optimizing buildings management \nProgramming Languages/Framerworks used: C#, .NET,  .NET Core, Linq2DB (ORM), TeamCity, Selenium, NancyFx (MVC), MongoDB, InfluxDB, MySQL, NoSQL, MQTT, WebSockets, RabbitMQ, TypeScript, JavaScript, WebSockets, React",
       "url": "https://www.linkedin.com/company/yodiwo/",
       "location": "Patras,Greece"
+    },
+    {
+      "name": "yodiwo",
+      "position": "Student Internship",
+      "startDate": "2015-06-30",
+      "endDate": "2015-08-31",
+      "highlights": [],
+      "summary": "Took part in workflow creator development.\nProgramming Languages/Framerworks used: C#, NancyFx, JavaScript",
+      "url": "https://www.linkedin.com/company/yodiwo/",
+      "location": "Patras"
+    },
+    {
+      "name": "The Ranch K.Skouras SA",
+      "position": "Team Leader",
+      "startDate": "2011-08-31",
+      "endDate": "2011-08-31",
+      "highlights": [],
+      "summary": "Team Leader of a small group of campers (16 children). \nResponsabilities: \n- Take care of the team's campers and understand every's member needs. \n- Make the children have fun and at the same time obey the rules of the camping.\n- Create strong relationships between the members of the team.\n- Program the activities of the team's house in collaboration with the campers.\n- Always know where the team member are. \n- Check the health of the members and inform the supervisor in case of sickness.\n- Make sure that the house and the stuff of the members are kept clean.\n- Cooperate and collaborate with other team leaders and other executives of the camping.",
+      "url": "",
+      "location": "Sofiko Korinthos 200 04, Greece"
+    },
+    {
+      "name": "The Ranch K.Skouras SA",
+      "position": "Team Leader",
+      "startDate": "2010-06-30",
+      "endDate": "2010-07-31",
+      "highlights": [],
+      "summary": "Team Leader of a small group of campers (18 children). \nResponsabilities: \n- Take care of the team's campers and understand every's member needs. \n- Make the children have fun and at the same time obey the rules of the camping.\n- Create strong relationships between the members of the team.\n- Program the activities of the team's house in collaboration with the campers.\n- Always know where the team member are. \n- Check the health of the members and inform the supervisor in case of sickness.\n- Make sure that the house and the stuff of the members are kept clean.\n- Cooperate and collaborate with other team leaders and other executives of the camping.",
+      "url": "",
+      "location": "Sofiko Korinthos 200 04, Greece"
     }
   ],
   "volunteer": [
@@ -157,22 +197,27 @@
   ],
   "skills": [
     {
-      "name": "Critical Thinking",
+      "name": "MariaDB",
       "level": "",
       "keywords": []
     },
     {
-      "name": "C#",
+      "name": "WildFly",
       "level": "",
       "keywords": []
     },
     {
-      "name": "Java",
+      "name": "Oracle Database",
       "level": "",
       "keywords": []
     },
     {
-      "name": "Agile Methodologies",
+      "name": "Legacy Systems",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Amazon Web Services (AWS)",
       "level": "",
       "keywords": []
     },
@@ -202,6 +247,11 @@
       "keywords": []
     },
     {
+      "name": "Java",
+      "level": "",
+      "keywords": []
+    },
+    {
       "name": "MySQL",
       "level": "",
       "keywords": []
@@ -222,6 +272,11 @@
       "keywords": []
     },
     {
+      "name": "gRPC",
+      "level": "",
+      "keywords": []
+    },
+    {
       "name": "Redis",
       "level": "",
       "keywords": []
@@ -233,6 +288,11 @@
     },
     {
       "name": "Python",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "C#",
       "level": "",
       "keywords": []
     },
@@ -277,6 +337,16 @@
       "keywords": []
     },
     {
+      "name": "Reactive Programming",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "",
+      "keywords": []
+    },
+    {
       "name": "Spring Boot",
       "level": "",
       "keywords": []
@@ -292,6 +362,11 @@
       "keywords": []
     },
     {
+      "name": "Protocol Buffers",
+      "level": "",
+      "keywords": []
+    },
+    {
       "name": "Git",
       "level": "",
       "keywords": []
@@ -302,7 +377,32 @@
       "keywords": []
     },
     {
+      "name": "Agile Methodologies",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "NewRelic",
+      "level": "",
+      "keywords": []
+    },
+    {
       "name": "C",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Grafana",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Critical Thinking",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MetaTrader",
       "level": "",
       "keywords": []
     },
@@ -318,6 +418,16 @@
     },
     {
       "name": "NoSQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Jenkins",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Infrastructure as code (IaC)",
       "level": "",
       "keywords": []
     },
