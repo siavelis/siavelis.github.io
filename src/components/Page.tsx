@@ -1,14 +1,11 @@
-import React, {useEffect, useMemo} from 'react';
+import React, {useEffect, useMemo, useState} from 'react';
 import NavigationBar from './NavigationBar';
 import Footer from './Footer';
 import {DarkModeToggle} from './DarkModeToggle';
 import {useMediaQuery} from 'react-responsive';
-import createPersistedState from 'use-persisted-state';
-
-const useColorSchemeState = createPersistedState('colorScheme');
 
 export const Page = ({children}) => {
-    const [isDark, setIsDark] = useColorSchemeState();
+    const [isDark, setIsDark] = useState(false);
 
     const systemPrefersDark = useMediaQuery(
         {
