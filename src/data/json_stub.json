@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Panagiotis Riccardo Siavelis",
-    "label": "Senior Software Engineer @ XM | Java Spring Boot",
+    "label": "Senior Integration Engineer @ Qualco",
     "image": "",
     "email": "prsiavelis@gmail.com",
     "phone": "",
@@ -22,12 +22,21 @@
   },
   "work": [
     {
+      "name": "QUALCO",
+      "position": "Senior Integration Engineer",
+      "startDate": "2024-04-30",
+      "endDate": "",
+      "highlights": [],
+      "url": "https://www.linkedin.com/company/qualco/",
+      "location": "Athens, Attiki, Greece"
+    },
+    {
       "name": "XM",
       "position": "Senior Software Engineer",
       "startDate": "2023-01-31",
-      "endDate": "",
+      "endDate": "2024-03-31",
       "highlights": [],
-      "summary": "- Bug fixes and new features in legacy systems\n- Support & monitor legacy systems\n- Contribute in a new Java Spring Boot application that attributes bonuses to clients based on some configurable filters",
+      "summary": "- Contribute in a new Java Spring Boot application that attributes bonuses to clients based on a configurable rules engine\n- Bug fixes and new features in legacy systems\n- Support & monitor legacy systems\n- Conduct technical investigations\n- Actively taking part of code reviews and being responsible for the team's output\n- Manage and evolve team related resources in AWS using the  Infrastructure as a Code (IaC) pattern\n- Facilitate team's operations in CI/CD with pipelines in Jenkins\n- Contributed in Java interviews\n- Onboarding of newcomers and mentoring of co-workers  \n- Drive Agile Ceremonies and coordinate closely with the Product owner for priorities and assessing the roadmap completion",
       "url": "https://www.linkedin.com/company/xm-global/",
       "location": "Athens, Attiki, Greece"
     },
@@ -462,7 +471,12 @@
     }
   ],
   "interests": [],
-  "references": [],
+  "references": [
+    {
+      "name": "David Sarikas",
+      "reference": "I worked with Panagiotis in the same Business Stream. Him and I had a very close working relationship as he was leading the development team that was responsible to deliver and bring to life my requests. Panagiotis was leading  his team on delivering high quality products and features leveraging Agile Methodologies. \nPanagiotis was not just a team leader, but a mentor and a friend. His meticulous attention to detail, particularly evident in our Pandora Project, ensured its success. He fostered a collaborative environment where every team member felt valued and inspired and he ensured that the business requirements were translated into technical tasks for his team. \nPanagiotis departure leaves big shoes to fill, and any team would be lucky to have him. Best of luck in your future endeavors!"
+    }
+  ],
   "projects": [],
   "meta": {
     "version": "v1.0.0",
