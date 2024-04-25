@@ -112,8 +112,7 @@ const IndexPage = ({
                         </Row>
                         <Row style={{paddingBottom: '1rem'}}>
                             <div dangerouslySetInnerHTML={{
-                                __html: summary
-                                    .replaceAll("\n", "<br/>")
+                                __html: (summary || '').replaceAll("\n", "<br/>")
                             }}/>
                         </Row>
                     </div>
