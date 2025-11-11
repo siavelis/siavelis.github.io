@@ -82,7 +82,7 @@ The repository uses GitHub Actions to automatically check Pull Requests for regr
 - **Build Verification**: Ensures the project builds successfully with `npm run build`
 - **Output Validation**: Confirms the build produces expected output files
 
-The CI pipeline runs automatically on every Pull Request to `main` or `master` branches. All checks must pass before merging to prevent regressions.
+The CI pipeline runs automatically on every Pull Request to `main`, `master`, `development`, or `feature*` branches. All checks must pass before merging to prevent regressions.
 
 ## Future improvements
 
