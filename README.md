@@ -74,6 +74,18 @@ git commit -m "Publishing to gh-pages"
 git push origin gh-pages
 ```
 
+## Continuous Integration
+
+The repository uses GitHub Actions to automatically check Pull Requests for regressions:
+
+- **Type Checking**: Verifies TypeScript types with `tsc --noEmit`
+- **Build Verification**: Ensures the project builds successfully with `npm run build`
+- **Output Validation**: Confirms the build produces expected output files
+
+The CI pipeline runs automatically on every Pull Request to `main` or `master` branches. All checks must pass before merging to prevent regressions.
+
 ## Future improvements
 
 - Make deployment with gitlab ci/cid
+- Add ESLint configuration for code style enforcement
+- Add automated visual regression testing
