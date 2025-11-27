@@ -4,10 +4,10 @@ A personal website built with Next.js framework.
 
 ## Requirements
 
-- Nodejs@19.8.1
-- npm@9.5.1
-- Next.js@12.0.10
-- Typescript
+- Node.js 20.x
+- npm 10.x
+- Next.js 16.x
+- TypeScript
 
 ## Deployment
 
@@ -60,7 +60,7 @@ serve -d production     # load website http://localhost:8080
 - Run `npm install` to install
 - Run `npm outdated` to check for missing updates
 
-### Setup Git Worktree for Deployment for Deployment Option 2
+### Setup Git Worktree for Deployment Option 2
 
 > **Note**: This section is for the legacy manual deployment approach. The recommended approach is to use GitHub Actions (see [Automatic Deployment](#automatic-deployment)).
 
