@@ -11,19 +11,28 @@ A personal website built with Next.js framework.
 
 ## Deployment
 
-[Github Pages](https://pages.github.com/) is used for deployment.
-This [post](https://itnext.io/next-js-app-on-github-pages-768020f2b65e) proposes two solutions.
+[Github Pages](https://pages.github.com/) is used for deployment with **GitHub Actions** (recommended approach).
 
-1. master branch with website root at '/docs'
-2. gh-branch
-3. Through [Vercel](https://nextjs.org/docs/deployment#vercel-recommended) (recommended by Next.js)
+### Automatic Deployment
 
-Option 2 was applied using the [gist-comment](https://gist.github.com/cobyism/4730490#gistcomment-3369702) that
-implements approach from
-[blog post](https://gohugo.io/hosting-and-deployment/hosting-on-github/#deployment-of-project-pages-from-your-gh-pages-branch).
+The repository uses GitHub Actions to automatically deploy to GitHub Pages:
 
-In short, [git worktree](https://git-scm.com/docs/git-worktree) is used, that allows multiple branches of the same local
-repository under different directories.
+1. Push changes to the `master` branch
+2. GitHub Actions will automatically build and deploy the site
+3. View deployment status in the Actions tab
+
+### One-Time Setup Required
+
+To enable automatic deployment, configure GitHub Pages in your repository settings:
+
+1. Go to **Settings** → **Pages**
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**
+3. The deployment workflow will handle the rest automatically
+
+### Alternative Deployment Options
+
+- **Vercel**: [Recommended by Next.js](https://nextjs.org/docs/deployment#vercel-recommended) for advanced features
+- **Manual gh-pages**: See [Legacy Deployment](#legacy-deployment-gh-pages) section below
 
 ## Development
 
@@ -53,6 +62,8 @@ serve -d production     # load website http://localhost:8080
 
 ### Setup Git Worktree for Deployment for Deployment Option 2
 
+> **Note**: This section is for the legacy manual deployment approach. The recommended approach is to use GitHub Actions (see [Automatic Deployment](#automatic-deployment)).
+
 ```
 git worktree add -B gh-pages docs origin/gh-pages
 ```
@@ -65,6 +76,8 @@ git worktree add -B gh-pages docs origin/gh-pages
 
 ### Manual deployment
 
+> **Note**: This section is for the legacy manual deployment approach. The recommended approach is to use GitHub Actions (see [Automatic Deployment](#automatic-deployment)).
+
 ```
 git checkout master
 npm run publish
@@ -74,18 +87,30 @@ git commit -m "Publishing to gh-pages"
 git push origin gh-pages
 ```
 
-## Continuous Integration
+## Legacy Deployment (gh-pages)
 
-The repository uses GitHub Actions to automatically check Pull Requests for regressions:
+The previous deployment method used `git worktree` with the `gh-pages` branch. This approach is preserved for reference but the GitHub Actions method above is now recommended.
 
+Reference links:
+- [Original blog post](https://itnext.io/next-js-app-on-github-pages-768020f2b65e)
+- [Git worktree gist](https://gist.github.com/cobyism/4730490#gistcomment-3369702)
+
+## Continuous Integration & Deployment
+
+The repository uses GitHub Actions for automation:
+
+### CI Pipeline
 - **Type Checking**: Verifies TypeScript types with `tsc --noEmit`
 - **Build Verification**: Ensures the project builds successfully with `npm run build`
 - **Output Validation**: Confirms the build produces expected output files
 
 The CI pipeline runs automatically on every Pull Request to `main`, `master`, `development`, or `feature*` branches. All checks must pass before merging to prevent regressions.
 
+### Deployment Pipeline
+- **Automatic Deployment**: Pushes to `master` branch trigger automatic deployment to GitHub Pages
+- **Manual Trigger**: Can also be triggered manually from the Actions tab via `workflow_dispatch`
+
 ## Future improvements
 
-- Make deployment with gitlab ci/cid
 - Add ESLint configuration for code style enforcement
 - Add automated visual regression testing
