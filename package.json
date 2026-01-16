@@ -44,7 +44,7 @@
     "@types/react": "^18.2.47",
     "@types/react-fontawesome": "^1.6.8",
     "fs-extra": "^11.2.0",
-    "npm-check-updates": "^16.14.12",
+    "npm-check-updates": "^19.3.1",
     "typescript": "^5.3.3"
   }
 }
