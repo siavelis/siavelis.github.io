@@ -8,7 +8,7 @@
     "email": "prsiavelis@gmail.com",
     "phone": "",
     "url": "",
-    "summary": "Engineering team lead passionate about solving complex problems and shipping quality software. I own features from design through deployment, set technical standards, and mentor engineers. Strong in Java, microservices, Kafka, Azure, and delivering secure FinTech solutions in Agile environments",
+    "summary": "Engineering team lead passionate about solving complex problems and shipping quality software. I own features from design through deployment, set technical standards, and mentor engineers. Strong in Java, microservices, Kafka, Azure, and delivering secure FinTech solutions in Agile environments.",
     "location": {
       "countryCode": "GR",
       "address": "Greece"
@@ -27,7 +27,7 @@
       "position": "Software Engineering Team Lead",
       "startDate": "2025-04-01",
       "highlights": [],
-      "summary": "- Lead a cross-functional team on a joint-venture FinTech platform with a Greek utility provider, delivering high-quality, secure services on time and within scope.\n- Own end-to-end feature delivery—from architecture and system design through implementation, testing, and comprehensive technical documentation.\n- Set engineering standards and best practices; drive code quality via reviews, pairing, and continuous improvement.\n- Mentor and develop engineers through regular 1:1s, coaching, and growth planning; foster a culture of ownership and craftsmanship.\n- Partner with Product and stakeholders to translate strategy into executable roadmaps, clarify scope, and manage trade-offs.\n- Collaborate with DevOps on Infrastructure as Code (IaC), environment management, and cloud cost optimization.\n- Coordinate cross-team dependencies and communicate status, risks, and mitigation plans to leadership\n- Tech stack: .Net 9, Java 21, ASP.NET, Quarkus, Spring Boot, Angular, Nextjs, Kafka, MongoDB, Redis, Kubernetes, Azure Services",
+      "summary": "- Lead a cross-functional team on a joint-venture FinTech platform with a Greek utility provider, delivering high-quality, secure services on time and within scope.\n- Own end-to-end feature delivery—from architecture and system design through implementation, testing, and comprehensive technical documentation.\n- Set engineering standards and best practices; drive code quality via reviews, pairing, and continuous improvement.\n- Mentor and develop engineers through regular 1:1s, coaching, and growth planning; foster a culture of ownership and craftsmanship.\n- Partner with Product and stakeholders to translate strategy into executable roadmaps, clarify scope, and manage trade-offs.\n- Collaborate with DevOps on Infrastructure as Code (IaC), environment management, and cloud cost optimization.\n- Coordinate cross-team dependencies and communicate status, risks, and mitigation plans to leadership.\n- Tech stack: .Net 9, Java 21, ASP.NET, Quarkus, Spring Boot, Angular, Nextjs, Kafka, MongoDB, Redis, Kubernetes, Azure Services",
       "url": "https://www.linkedin.com/company/qualco/",
       "location": "Athens, Attiki, Greece"
     },
