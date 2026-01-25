@@ -2,7 +2,7 @@ import {Badge, Col, Container, Row} from 'react-bootstrap';
 import React from 'react';
 import Avatar from '../components/Avatar';
 import jsonResumeData from '../data/json_stub.json';
-import {format} from 'date-fns';
+import {format, isValid} from 'date-fns';
 
 const IndexPage = ({
                        resume: {
@@ -141,9 +141,16 @@ const sortByStringProperty = (array, property) => {
 }
 
 const formatYear = (date) => {
-    return format(new Date(date), 'yyyy');
+    if (!date) {
+        return '';
+    }
+    const parsedDate = new Date(date);
+    if (!isValid(parsedDate)) {
+        return '';
+    }
+    return format(parsedDate, 'yyyy');
 }
-const formatYearOrNow = (date) => date == '' ?
+const formatYearOrNow = (date) => !date ?
     'now'
     : formatYear(date);
 
