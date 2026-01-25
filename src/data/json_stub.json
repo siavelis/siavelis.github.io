@@ -26,7 +26,7 @@
       "position": "Software Engineering Team Lead",
       "startDate": "2025-04-01",
       "highlights": [],
-      "summary": "- Lead a cross-functional team on a joint-venture FinTech platform with a Greek utility provider, delivering high-quality, secure services on time and within scope.\n- Own end-to-end feature delivery—from architecture and system design through implementation, testing, and comprehensive technical documentation.\n- Set engineering standards and best practices; drive code quality via reviews, pairing, and continuous improvement.\n- Mentor and develop engineers through regular 1:1s, coaching, and growth planning; foster a culture of ownership and craftsmanship.\n- Partner with Product and stakeholders to translate strategy into executable roadmaps, clarify scope, and manage trade-offs.\n- Collaborate with DevOps on Infrastructure as Code (IaC), environment management, and cloud cost optimization.\n- Coordinate cross-team dependencies and communicate status, risks, and mitigation plans to leadership.\n-- Tech stack: .NET 9, Java 21, ASP.NET, Quarkus, Spring Boot, Angular, Next.js, Kafka, MongoDB, Redis, Kubernetes, Azure Services",
+      "summary": "- Lead a cross-functional team on a joint-venture FinTech platform with a Greek utility provider, delivering high-quality, secure services on time and within scope.\n- Own end-to-end feature delivery—from architecture and system design through implementation, testing, and comprehensive technical documentation.\n- Set engineering standards and best practices; drive code quality via reviews, pairing, and continuous improvement.\n- Mentor and develop engineers through regular 1:1s, coaching, and growth planning; foster a culture of ownership and craftsmanship.\n- Partner with Product and stakeholders to translate strategy into executable roadmaps, clarify scope, and manage trade-offs.\n- Collaborate with DevOps on Infrastructure as Code (IaC), environment management, and cloud cost optimization.\n- Coordinate cross-team dependencies and communicate status, risks, and mitigation plans to leadership.\n- Tech stack: .NET 9, Java 21, ASP.NET, Quarkus, Spring Boot, Angular, Next.js, Kafka, MongoDB, Redis, Kubernetes, Azure Services",
       "url": "https://www.linkedin.com/company/qualco/",
       "location": "Athens, Attiki, Greece"
     },
@@ -46,7 +46,7 @@
       "startDate": "2023-01-31",
       "endDate": "2024-03-31",
       "highlights": [],
-      "summary": "- Contribute in a new Java Spring Boot application that attributes bonuses to clients based on a configurable rules engine\n- Bug fixes and new features in legacy systems\n- Support & monitor legacy systems\n- Conduct technical investigations\n- Actively taking part of code reviews and being responsible for the team's output\n- Manage and evolve team related resources in AWS using the Infrastructure as a Code (IaC) pattern\n- Facilitate team's operations in CI/CD with pipelines in Jenkins\n- Contributed in Java interviews\n- Onboarding of newcomers and mentoring of co-workers  \n- Drive Agile Ceremonies and coordinate closely with the Product owner for priorities and assessing the roadmap completion",
+      "summary": "- Contribute in a new Java Spring Boot application that attributes bonuses to clients based on a configurable rules engine\n- Bug fixes and new features in legacy systems\n- Support & monitor legacy systems\n- Conduct technical investigations\n- Actively taking part of code reviews and being responsible for the team's output\n- Manage and evolve team related resources in AWS using the Infrastructure as a Code (IaC) pattern\n- Facilitate team's operations in CI/CD with pipelines in Jenkins\n- Contributed in Java interviews\n- Onboarding of newcomers and mentoring of co-workers\n- Drive Agile Ceremonies and coordinate closely with the Product owner for priorities and assessing the roadmap completion",
       "url": "https://www.linkedin.com/company/xm-global/",
       "location": "Athens, Attiki, Greece"
     },
@@ -216,97 +216,7 @@
   ],
   "skills": [
     {
-      "name": "MariaDB",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "WildFly",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Oracle Database",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Legacy Systems",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Amazon Web Services (AWS)",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Microservices",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": ".NET Framework",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "MongoDB",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Web Applications",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Digital Image Processing",
-      "level": "",
-      "keywords": []
-    },
-    {
       "name": "Java",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "MySQL",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Hibernate",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": ".NET Core",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Computer Vision",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "gRPC",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Redis",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Web Technologies",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Python",
       "level": "",
       "keywords": []
     },
@@ -316,52 +226,7 @@
       "keywords": []
     },
     {
-      "name": "Software Development",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Web Development",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Test Driven Development",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "C++",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Spring Framework",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "MVC",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Digital Signal Processing",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Kubernetes",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Reactive Programming",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "PostgreSQL",
+      "name": ".NET Core",
       "level": "",
       "keywords": []
     },
@@ -371,82 +236,7 @@
       "keywords": []
     },
     {
-      "name": "TypeScript",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Linux",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Protocol Buffers",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Git",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "JavaScript",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Agile Methodologies",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "NewRelic",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "C",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Grafana",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Critical Thinking",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "MetaTrader",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Spring DI",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Elasticsearch",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "NoSQL",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Jenkins",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Infrastructure as code (IaC)",
+      "name": "Microservices",
       "level": "",
       "keywords": []
     },
@@ -456,12 +246,52 @@
       "keywords": []
     },
     {
+      "name": "Kubernetes",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Azure",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Amazon Web Services (AWS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MongoDB",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Redis",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "",
+      "keywords": []
+    },
+    {
       "name": "React.js",
       "level": "",
       "keywords": []
     },
     {
-      "name": "InfluxDB",
+      "name": "TypeScript",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Next.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Jenkins",
       "level": "",
       "keywords": []
     }
