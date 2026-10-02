@@ -17,6 +17,11 @@
         "network": "LinkedIn",
         "username": "prsiavelis",
         "url": "https://www.linkedin.com/in/prsiavelis/"
+      },
+      {
+        "network": "GitHub",
+        "username": "siavelis",
+        "url": "https://github.com/siavelis"
       }
     ]
   },
@@ -26,8 +31,9 @@
       "position": "Senior Software Engineer",
       "startDate": "2026-04-01",
       "highlights": [],
-      "summary":"",
-      "url": "https://www.linkedin.com/company/allwyn-lottery-solutions/"
+      "summary": "",
+      "url": "https://www.linkedin.com/company/allwyn-lottery-solutions/",
+      "location": "Athens, Attiki, Greece"
     },
     {
       "name": "Qualco Technology",
@@ -40,7 +46,7 @@
       "location": "Athens, Attiki, Greece"
     },
     {
-      "name": "QUQUALCOALCOQualco Technology",
+      "name": "Qualco Technology",
       "position": "Senior Integration Engineer",
       "startDate": "2024-04-01",
       "endDate": "2025-04-01",
@@ -108,26 +114,6 @@
       "summary": "Took part in workflow creator development.\nProgramming Languages/Framerworks used: C#, NancyFx, JavaScript",
       "url": "https://www.linkedin.com/company/yodiwo/",
       "location": "Patras"
-    },
-    {
-      "name": "The Ranch K.Skouras SA",
-      "position": "Team Leader",
-      "startDate": "2011-08-31",
-      "endDate": "2011-08-31",
-      "highlights": [],
-      "summary": "Team Leader of a small group of campers (16 children). \nResponsabilities: \n- Take care of the team's campers and understand every's member needs. \n- Make the children have fun and at the same time obey the rules of the camping.\n- Create strong relationships between the members of the team.\n- Program the activities of the team's house in collaboration with the campers.\n- Always know where the team member are. \n- Check the health of the members and inform the supervisor in case of sickness.\n- Make sure that the house and the stuff of the members are kept clean.\n- Cooperate and collaborate with other team leaders and other executives of the camping.",
-      "url": "",
-      "location": "Sofiko Korinthos 200 04, Greece"
-    },
-    {
-      "name": "The Ranch K.Skouras SA",
-      "position": "Team Leader",
-      "startDate": "2010-06-30",
-      "endDate": "2010-07-31",
-      "highlights": [],
-      "summary": "Team Leader of a small group of campers (18 children). \nResponsabilities: \n- Take care of the team's campers and understand every's member needs. \n- Make the children have fun and at the same time obey the rules of the camping.\n- Create strong relationships between the members of the team.\n- Program the activities of the team's house in collaboration with the campers.\n- Always know where the team member are. \n- Check the health of the members and inform the supervisor in case of sickness.\n- Make sure that the house and the stuff of the members are kept clean.\n- Cooperate and collaborate with other team leaders and other executives of the camping.",
-      "url": "",
-      "location": "Sofiko Korinthos 200 04, Greece"
     }
   ],
   "volunteer": [
@@ -182,15 +168,6 @@
         "3 - Social Economy & Entrepreneurship: from theory to practice - organized by Office of Employment & Career of University of Patras",
         "5 - Robotics in Rehabilitation - organized by Hellenic Society for Biomedical Technology και το Tempus Huton Project"
       ]
-    },
-    {
-      "institution": "2nd high school of Aigio",
-      "area": "",
-      "studyType": "High School",
-      "startDate": "2007-12-31",
-      "endDate": "2010-12-31",
-      "score": "17.0",
-      "courses": []
     }
   ],
   "awards": [],
@@ -227,82 +204,98 @@
     {
       "name": "Java",
       "level": "",
-      "keywords": []
+      "keywords": ["Languages"],
+      "category": "Languages"
     },
     {
       "name": "C#",
       "level": "",
-      "keywords": []
-    },
-    {
-      "name": ".NET Core",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Spring Boot",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Microservices",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Apache Kafka",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Kubernetes",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Microsoft Azure",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Amazon Web Services (AWS)",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "MongoDB",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Redis",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "PostgreSQL",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "React.js",
-      "level": "",
-      "keywords": []
+      "keywords": ["Languages"],
+      "category": "Languages"
     },
     {
       "name": "TypeScript",
       "level": "",
-      "keywords": []
+      "keywords": ["Languages"],
+      "category": "Languages"
+    },
+    {
+      "name": "Spring Boot",
+      "level": "",
+      "keywords": ["Frameworks"],
+      "category": "Frameworks"
+    },
+    {
+      "name": ".NET Core",
+      "level": "",
+      "keywords": ["Frameworks"],
+      "category": "Frameworks"
+    },
+    {
+      "name": "React.js",
+      "level": "",
+      "keywords": ["Frameworks"],
+      "category": "Frameworks"
     },
     {
       "name": "Next.js",
       "level": "",
-      "keywords": []
+      "keywords": ["Frameworks"],
+      "category": "Frameworks"
+    },
+    {
+      "name": "Kubernetes",
+      "level": "",
+      "keywords": ["Infrastructure"],
+      "category": "Infrastructure"
+    },
+    {
+      "name": "Microsoft Azure",
+      "level": "",
+      "keywords": ["Infrastructure"],
+      "category": "Infrastructure"
+    },
+    {
+      "name": "Amazon Web Services (AWS)",
+      "level": "",
+      "keywords": ["Infrastructure"],
+      "category": "Infrastructure"
     },
     {
       "name": "Jenkins",
       "level": "",
-      "keywords": []
+      "keywords": ["Infrastructure"],
+      "category": "Infrastructure"
+    },
+    {
+      "name": "Apache Kafka",
+      "level": "",
+      "keywords": ["Data & Messaging"],
+      "category": "Data & Messaging"
+    },
+    {
+      "name": "MongoDB",
+      "level": "",
+      "keywords": ["Data & Messaging"],
+      "category": "Data & Messaging"
+    },
+    {
+      "name": "Redis",
+      "level": "",
+      "keywords": ["Data & Messaging"],
+      "category": "Data & Messaging"
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "",
+      "keywords": ["Data & Messaging"],
+      "category": "Data & Messaging"
+    },
+    {
+      "name": "Microservices",
+      "level": "",
+      "keywords": ["Architecture"],
+      "category": "Architecture"
     }
   ],
   "languages": [

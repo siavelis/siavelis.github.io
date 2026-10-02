@@ -15,6 +15,7 @@ export const NavigationBar = ({isDark, darkModeToggleComponent}) => {
                     style={{flexDirection: 'row'}}
                 >
                     {renderNavLink('/', <Navbar.Brand>prsiavelis</Navbar.Brand>)}
+                    {renderNavLinkWithFaIcon('mailto:prsiavelis@gmail.com', 'fa-envelope')}
                     {renderNavLinkWithFaIcon('https://linkedin.com/in/prsiavelis', 'fa-linkedin-square')}
                     {renderNavLinkWithFaIcon('https://github.com/siavelis', 'fa-github-alt')}
                 </Nav>
