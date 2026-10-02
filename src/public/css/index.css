@@ -1,0 +1,356 @@
+/* ── Base Typography ─────────────────────────────────────────── */
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+body.dark {
+    color: #e0e0e0;
+}
+
+/* ── Section Headings ────────────────────────────────────────── */
+h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid #0d6efd;
+    padding-bottom: 0.4rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+body.dark h2 {
+    color: #f0f0f0;
+    border-bottom-color: #4dabf7;
+}
+
+/* ── Hero Section ────────────────────────────────────────────── */
+.hero {
+    padding: 2rem 0 1rem;
+}
+
+.hero-name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.15rem;
+}
+
+.hero-label {
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+body.dark .hero-label {
+    color: #adb5bd;
+}
+
+.hero-location {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+body.dark .hero-location {
+    color: #adb5bd;
+}
+
+.hero-summary {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-top: 1rem;
+    max-width: 600px;
+}
+
+.hero-photo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero-photo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ── Contact Links ───────────────────────────────────────────── */
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.contact-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+    color: #0d6efd;
+    text-decoration: none;
+    padding: 0.35rem 0.75rem;
+    border: 1px solid #0d6efd;
+    border-radius: 2rem;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.contact-links a:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+body.dark .contact-links a {
+    color: #4dabf7;
+    border-color: #4dabf7;
+}
+
+body.dark .contact-links a:hover {
+    background-color: #4dabf7;
+    color: #1a1a1a;
+}
+
+/* ── Skills ──────────────────────────────────────────────────── */
+.skill-category {
+    margin-bottom: 1rem;
+}
+
+.skill-category-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #666;
+    margin-bottom: 0.35rem;
+}
+
+body.dark .skill-category-label {
+    color: #adb5bd;
+}
+
+.skill-category .badge {
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.35rem 0.65rem;
+    margin-right: 0.35rem;
+    margin-bottom: 0.35rem;
+    border-radius: 0.35rem;
+}
+
+/* ── Work Experience ─────────────────────────────────────────── */
+.work-entry {
+    margin-bottom: 1.75rem;
+}
+
+.work-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.15rem;
+}
+
+.work-position {
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.work-company {
+    font-weight: 400;
+    color: #555;
+}
+
+body.dark .work-company {
+    color: #adb5bd;
+}
+
+.work-dates {
+    font-size: 0.9rem;
+    color: #666;
+    white-space: nowrap;
+}
+
+body.dark .work-dates {
+    color: #adb5bd;
+}
+
+.work-location {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+body.dark .work-location {
+    color: #868e96;
+}
+
+.work-summary ul {
+    padding-left: 1.25rem;
+    margin-bottom: 0;
+}
+
+.work-summary ul li {
+    margin-bottom: 0.3rem;
+    line-height: 1.55;
+}
+
+.work-summary .todo-placeholder {
+    color: #dc3545;
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+/* ── Education ───────────────────────────────────────────────── */
+.edu-entry {
+    margin-bottom: 1.25rem;
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.edu-institution {
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.edu-dates {
+    font-size: 0.9rem;
+    color: #666;
+    white-space: nowrap;
+}
+
+body.dark .edu-dates {
+    color: #adb5bd;
+}
+
+.edu-degree {
+    font-style: italic;
+    color: #555;
+}
+
+body.dark .edu-degree {
+    color: #adb5bd;
+}
+
+/* ── Certifications ──────────────────────────────────────────── */
+.cert-entry {
+    margin-bottom: 0.75rem;
+}
+
+.cert-name {
+    font-weight: 600;
+}
+
+.cert-issuer {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+body.dark .cert-issuer {
+    color: #adb5bd;
+}
+
+.cert-entry a {
+    font-size: 0.85rem;
+}
+
+/* ── Languages ───────────────────────────────────────────────── */
+.language-entry {
+    margin-bottom: 0.35rem;
+}
+
+.language-name {
+    font-weight: 600;
+}
+
+.language-fluency {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+body.dark .language-fluency {
+    color: #adb5bd;
+}
+
+/* ── Footer ──────────────────────────────────────────────────── */
+.site-footer {
+    margin-top: 3rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid #dee2e6;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+body.dark .site-footer {
+    border-top-color: #495057;
+    color: #868e96;
+}
+
+.site-footer a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ── Sidebar Sections (left column on desktop) ───────────────── */
+.sidebar-section {
+    margin-bottom: 0;
+}
+
+/* ── Print Styles ────────────────────────────────────────────── */
+@media print {
+    body {
+        font-size: 11pt;
+        color: #000;
+    }
+
+    h2 {
+        border-bottom-color: #000;
+        color: #000;
+        margin-top: 1rem;
+    }
+
+    .contact-links a {
+        color: #000;
+        border-color: #000;
+    }
+
+    .site-footer {
+        display: none;
+    }
+}
+
+/* ── Mobile Responsive ───────────────────────────────────────── */
+@media (max-width: 576px) {
+    .hero-photo {
+        margin-bottom: 1rem;
+    }
+
+    .hero-photo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hero-name {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-top: 1.75rem;
+    }
+}

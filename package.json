@@ -38,13 +38,14 @@
     "use-persisted-state": "github:donavon/use-persisted-state#develop"
   },
   "devDependencies": {
-    "serve": "^14.2.6",
     "@kurone-kito/jsonresume-types": "^0.4.0",
     "@types/node": "^20.10.6",
     "@types/react": "^18.2.47",
     "@types/react-fontawesome": "^1.6.8",
+    "baseline-browser-mapping": "^2.11.27",
     "fs-extra": "^11.2.0",
     "npm-check-updates": "^19.3.1",
+    "serve": "^14.2.6",
     "typescript": "^5.3.3"
   }
 }
